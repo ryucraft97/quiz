@@ -1,0 +1,113 @@
+.landing-wrapper {
+  min-height: 100vh;
+  background: #f5fff9;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 1rem 1rem 2rem;
+  margin-top: -10rem;
+  box-sizing: border-box;
+}
+
+.landing-header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 2rem 1.5rem; /* Thicker bar */
+  background: #d1ffe9;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 10;
+  box-shadow: 0 2px 8px rgba(0, 128, 96, 0.2);
+}
+
+.logo {
+  height: 28px;
+  filter: none; /* make it white */
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.menu-icon {
+  position: absolute;
+  right: 3rem;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.6rem;
+  cursor: pointer;
+  color: #00a86b; /* green toggle */
+}
+
+.landing-content {
+  max-width: 540px;
+  width: 80%;
+  background: #ffffff;
+  padding: 2rem 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 0 40px rgba(0, 128, 96, 0.2);
+  text-align: center;
+  color: #222;
+}
+
+h1 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  color: #00a86b;
+}
+
+.subtext {
+  margin-bottom: 1.5rem;
+  color: #666;
+}
+
+.age-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.age-card {
+  background-color: #f0fff7;
+  border-radius: 12px;
+  padding: 1.2rem 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.2s ease;
+  flex-direction: column;
+  gap: 0.75rem;
+  text-align: center;
+  font-size: 1.1rem;
+  color: #222;
+  border: 2px solid transparent;
+}
+
+.age-card:hover {
+  background-color: #e0f8ec;
+  border-color: #00a86b;
+}
+
+.terms {
+  font-size: 0.75rem;
+  color: #555;
+  margin-top: 1rem;
+}
+
+.terms a {
+  color: #00a86b;
+  text-decoration: underline;
+}
+
+.age-image {
+  width: 140px;
+  height: 140px;
+  border-radius: 8px;
+  object-fit: cover;
+}

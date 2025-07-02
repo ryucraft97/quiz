@@ -1,0 +1,165 @@
+.product-page {
+    background: #E8FFF1;
+    color: #1A1A1A;
+    min-height: 100vh;
+    padding: 0 1.5rem 4rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .product-title {
+    font-size: 2rem;
+    color: #197A5E;
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+
+  .product-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    width: 100%;
+    max-width: 1200px;
+  }
+  
+  .product-card {
+    background: #F6FFFA;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0, 150, 100, 0.4);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    max-width: 360px;
+    width: 100%;
+    flex: 1 1 300px;
+  }
+  
+  .product-image {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 1.5rem;
+  }
+  
+  .product-info h2 {
+    color: #197A5E;
+    margin-bottom: 0.5rem;
+  }
+  
+  .product-info p {
+    color: #4A4A4A;
+    margin-bottom: 1.5rem;
+    text-align: center;
+  }
+  
+  .product-button {
+    background-color: #34C998;
+    color: #fff;
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s;
+    display: block;
+    margin: 1rem auto 0 auto;
+    font-weight: bold;
+    animation: glowPulseOrange 2s infinite ease-in-out;
+  }
+  
+  .product-button:hover {
+    background-color: #28A97B;
+  }
+.badge {
+  position: absolute;
+  top: 1rem;
+  right: -0.5rem;
+  background-color: #FF9999;
+  color: #ffffff;
+  padding: 0.4rem 0.8rem;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: bold;
+  box-shadow: 0 0 10px rgba(255, 179, 179, 0.4);
+  z-index: 1;
+  transform: rotate(15deg);
+  transform-origin: top right;
+}
+
+@keyframes glowPulse {
+  0%, 100% {
+    box-shadow: 0 0 10px rgba(0, 150, 100, 0.3);
+  }
+  50% {
+    box-shadow: 0 0 30px rgba(0, 150, 100, 0.8);
+  }
+}
+
+.most-picked {
+  position: relative;
+  animation: glowPulse 2s infinite ease-in-out;
+}
+
+.footer {
+  margin-top: 4rem;
+  padding: 2rem 1rem;
+  background-color: #D6FBE3;
+  color: #197A5E;
+  text-align: center;
+  font-size: 0.85rem;
+}
+
+.footer a {
+  color: #197A5E;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+.product-name {
+  font-size: 1.5rem;
+  color: #197A5E;
+  margin-bottom: 0.25rem;
+  display: block;
+  text-align: center;
+}
+
+.product-price {
+  font-size: 1rem;
+  color: #28A97B;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.feature-list {
+  list-style-type: disc;
+  margin: 0 0 1.5rem 1.25rem;
+  padding: 0;
+  color: #1A1A1A;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.6;
+  text-align: left;
+}
+
+.product-subtext {
+  font-style: italic;
+  color: #6E8F8A;
+  font-size: 0.85rem;
+  text-align: center;
+  margin-top: -0.5rem;
+  margin-bottom: 1rem;
+}
+@keyframes glowPulseOrange {
+  0%, 100% {
+    box-shadow: 0 0 10px rgba(255, 165, 0, 0.3);
+  }
+  50% {
+    box-shadow: 0 0 30px rgba(255, 165, 0, 0.8);
+  }
+}

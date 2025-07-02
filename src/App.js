@@ -1,24 +1,40 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { BrowserRouter as Router, Routes, Route, useLocation } from "react-router-dom";
+import { useEffect } from "react";
+import LandingPage from "./components/LandingPage";
+import Quiz from "./components/Quiz";
+import ResultPage from "./components/ResultPage";
+import SubmitLead from "./components/SubmitLead";
+import ThankYou from "./components/ThankYou";
+import ProductPage from "./components/ProductPage";
+import TermsOfService from "./components/tos";
+import PrivacyPolicy from "./components/privacy";
+
+const ScrollToTop = () => {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
+  return null;
+};
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <ScrollToTop />
+      <Routes>
+        <Route path="/" element={<LandingPage />} />
+        <Route path="/quiz" element={<Quiz />} />
+        <Route path="/result" element={<ResultPage />} />
+        <Route path="/submit" element={<SubmitLead />} />
+        <Route path="/thank-you" element={<ThankYou />} />
+        <Route path="/product" element={<ProductPage />} />
+        <Route path="/tos" element={<TermsOfService />} />
+        <Route path="/privacy" element={<PrivacyPolicy />} />
+      </Routes>
+    </Router>
   );
 }
 

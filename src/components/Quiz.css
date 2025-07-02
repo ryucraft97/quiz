@@ -1,0 +1,198 @@
+/* Updated Quiz.css with pastel and green tones */
+
+.choice-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin: 0 auto;
+  overflow-y: auto;
+  padding: 1rem;
+  padding-bottom: 14rem;
+  max-height: none;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.landing-header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 2rem 1.5rem;
+  background: #1a1a1a;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 10;
+  box-shadow: none;
+}
+
+.menu-icon {
+  color: #fff;
+}
+
+.choice-item {
+  width: 100%;
+  background: #ffffff;
+  padding: 2rem 2rem;
+  border-radius: 16px;
+  font-size: 1.05rem;
+  cursor: pointer;
+  border: 2px solid #d0f2e4;
+  transition: all 0.2s ease;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  margin-top: 5%;
+  color: #1a1a1a;
+}
+
+.choice-item input[type="checkbox"] {
+  width: 30px;
+  height: 30px;
+}
+
+.choice-item span {
+  flex: 1;
+}
+
+.choice-item.selected {
+  background: #E8FFF1;
+  border-color: #34C998;
+  font-weight: bold;
+}
+
+.choice-item:hover {
+  background: #D6FBE3;
+  border-color: #34C998;
+}
+
+.next-button {
+  background-color: #34C998;
+  color: #fff;
+  border: none;
+  padding: 0.75rem 3rem;
+  min-width: 200px;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.next-button:disabled {
+  background-color: #888;
+  cursor: not-allowed;
+}
+
+.next-button:not(:disabled):hover {
+  background-color: #2CAB84;
+}
+
+.choice-image-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  justify-content: center;
+  width: 100%;
+  margin-top: 5rem;
+}
+
+.image-option {
+  width: 100%;
+  max-width: 220px;
+  cursor: pointer;
+  text-align: center;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  background: #ffffff;
+  color: #1a1a1a;
+  border: 3px solid transparent;
+}
+
+.image-option:hover {
+  border: 3px solid #34C998;
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(163, 247, 191, 0.4);
+}
+
+.option-img {
+  width: 100%;
+  height: auto;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.image-option p {
+  padding: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.landing-content {
+  max-width: 540px;
+  background: #ffffff;
+  margin-top: 1rem;
+  padding: 9rem 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 0 40px rgba(52, 201, 152, 0.6); /* deeper mint green glow */
+  width: 100%;
+  color: #1a1a1a;
+}
+
+.quiz-container {
+  margin-top: -4rem;
+  max-width: 540px;
+  background: #ffffff;
+  padding: 2rem 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 0 40px rgba(52, 201, 152, 0.6); /* deeper mint green glow */
+  color: #1a1a1a;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.landing-wrappe {
+  min-height: 100vh;
+  background: #f2fffa;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 1rem 1rem 2rem;
+  margin-top: 0rem;
+}
+
+.bg-canva {
+  margin-top: 0;
+  width: 100%;
+  height: calc(100vh - 80px);
+  background-color: #f2fffa;
+  z-index: -1;
+}
+
+.sticky-next {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: calc(100% - 2rem);
+  background-color: #ffffff;
+  margin: 0 1rem;
+  padding: 1.5rem;
+  text-align: center;
+  z-index: 100;
+  box-shadow: 0 -4px 10px rgba(52, 201, 152, 0.5); /* deeper mint green glow */
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f2fffa;
+}
+/* Footer styles for pastel green theme */
+.footer {
+  background-color: #ffffff;
+  color: #1a1a1a;
+  text-align: center;
+  padding: 2rem 1rem;
+  border-top: 1px solid #e0f7ea;
+  box-shadow: 0 -2px 10px rgba(52, 201, 152, 0.2);
+}

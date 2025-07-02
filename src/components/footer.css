@@ -1,0 +1,37 @@
+.footer {
+  margin-top: 4rem;
+  padding: 2rem 1rem;
+  background-color: #D6FBE3;
+  color: #197A5E;
+  text-align: center;
+  font-size: 0.85rem;
+}
+
+.footer-content {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.footer-menu {
+  margin: 1rem 0;
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.footer-menu a {
+  color: #197A5E;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.footer-menu a:hover {
+  text-decoration: underline;
+}
+
+.footer-branding {
+  font-size: 0.75rem;
+  margin-top: 1rem;
+  color: #197A5E;
+}
