@@ -5,10 +5,10 @@ import { useNavigate } from "react-router-dom";
 import "./LandingPage.css"; // separate for clean styles
 
 const ageOptions = [
-  { label: "Age: 18–29", value: "18-29", image: "18.png" },
-  { label: "Age: 30–39", value: "30-39", image: "30.png" },
-  { label: "Age: 40–49", value: "40-49", image: "40.png" },
-  { label: "Age: 50+", value: "50+", image: "50.png" },
+  { label: "Age: 18–29", value: "18-29", image: "18.jpg" },
+  { label: "Age: 30–39", value: "30-39", image: "30.jpg" },
+  { label: "Age: 40–49", value: "40-49", image: "40.jpg" },
+  { label: "Age: 50+", value: "50+", image: "50.jpg" },
 ];
 
 const LandingPage = () => {
