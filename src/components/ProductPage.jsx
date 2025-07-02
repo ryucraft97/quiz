@@ -16,7 +16,7 @@ const ProductPage = () => {
         <div className="product-grid">
           <div className="product-card most-picked">
             <div className="badge">TOP MATCH</div>
-            <img src="/bart.png" alt="Essential" className="product-image" />
+            <img src="/bart.jpg" alt="Essential" className="product-image" />
             <div className="product-info">
               <h2><strong className="product-name">7-Day Sugar Detox</strong></h2>
               <p className="product-price">
