@@ -32,7 +32,7 @@ const ProductPage = () => {
                 <li><strong>Shed Excess Weight Naturally Without Starving</strong></li>
               </ul>
               <a
-                href="https://ybgskz-i7.myshopify.com/checkouts/cn/hWN08OYSiURfCVAvLYJKXKzL?preview_theme_id=180813726019"
+                href="https://sugardelete.myshopify.com/checkouts/cn/Z2NwLWV1cm9wZS13ZXN0MTowMUpaOFNLUFY0RTUzTU5aSjc4RVlQM1IzMw?preview_theme_id=180813726019"
                 className="product-button"
                 target="_blank"
                 rel="noopener noreferrer"
