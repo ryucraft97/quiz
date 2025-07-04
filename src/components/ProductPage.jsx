@@ -7,7 +7,12 @@ const ProductPage = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
     if (window.ttq) {
-      window.ttq.track("ViewContent");
+      window.ttq.track("ViewContent", {
+        content_id: "sugar-detox-ebook",
+        content_type: "product",
+        quantity: 1,
+        price: 19.99
+      });
     }
   }, []);
 
