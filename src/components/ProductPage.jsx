@@ -6,6 +6,9 @@ import "./ProductPage.css";
 const ProductPage = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
+    if (window.ttq) {
+      window.ttq.track("ViewContent");
+    }
   }, []);
 
   return (
