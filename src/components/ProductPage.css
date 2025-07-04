@@ -67,6 +67,7 @@
     margin: 1rem auto 0 auto;
     font-weight: bold;
     animation: glowPulseOrange 2s infinite ease-in-out;
+    text-align: center;
   }
   
   .product-button:hover {
@@ -162,4 +163,30 @@
   50% {
     box-shadow: 0 0 30px rgba(255, 165, 0, 0.8);
   }
+}
+/* New styles for product intro, urgency note, and testimonial */
+.product-intro {
+  font-size: 1rem;
+  color: #333;
+  margin: 1rem auto 2rem auto;
+  max-width: 600px;
+  text-align: center;
+  line-height: 1.6;
+}
+
+.urgency-note {
+  font-size: 0.95rem;
+  color: #D9534F;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.testimonial {
+  font-style: italic;
+  font-size: 0.95rem;
+  color: #555;
+  text-align: center;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
 }

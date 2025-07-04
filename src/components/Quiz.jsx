@@ -54,12 +54,13 @@ const quizQuestions = [
   {
     id: 5,
     type: "choice-list",
-    question: "Have you tried cutting sugar before?",
+    question: "What’s your past experience with sugar detoxes?",
     multiple: true,
     options: [
-      "Yes, but I couldn’t stick with it",
-      "Yes, but I didn’t notice any change",
-      "No, I’ve never seriously tried"
+      "I’ve tried but didn’t stick with it",
+      "I saw some results but it didn’t last",
+      "I’ve never done a sugar detox before",
+      "I’ve been meaning to start but haven’t yet"
     ]
   },
   {

@@ -13,6 +13,9 @@ const ProductPage = () => {
       <Header />
       <div className="product-content">
         <h1 className="product-title">🎯 Your Symptoms Suggest You’re a Great Fit for a 7-Day Sugar Detox.</h1>
+        <p className="product-intro">
+          Based on your answers, you’re likely dealing with sugar cravings, low energy, or bloating. That’s not your fault — sugar dependency is real, and you’re not alone. This 7-day plan is designed to reset your gut, balance your energy, and put you back in control — fast.
+        </p>
         <div className="product-grid">
           <div className="product-card most-picked">
             <div className="badge">TOP MATCH</div>
@@ -22,15 +25,18 @@ const ProductPage = () => {
               <p className="product-price">
                 $19.99 <span className="compare-price" style={{ textDecoration: "line-through", color: "#aaa", marginLeft: "0.5rem" }}>$29.99</span>
               </p>
+              <p className="urgency-note">🔥 Intro price ending soon — don’t miss this chance to reboot your health.</p>
               <p className="product-subtext">Money-back Guaranteed. Download instantly.</p>
               <ul className="feature-list">
-                <li>7-Day Sugar Detox Meal Plan</li>
-                <li>Gut-Friendly Food Guide</li>
-                <li>Cravings Reset Cheatsheet</li>
-                <li>Daily Step-by-Step Routine</li>
-                <li>“Bounce Back” Strategy for Sugar Relapse</li>
-                <li><strong>Shed Excess Weight Naturally Without Starving</strong></li>
+                <li><strong>✅ Meal Plan:</strong> Done-for-you 7-day detox meals</li>
+                <li><strong>✅ Gut Health:</strong> Food guide to beat bloating & fatigue</li>
+                <li><strong>✅ Habit Help:</strong> Daily routine + cravings control cheat sheet</li>
+                <li><strong>✅ Long-term Results:</strong> Bounce-back strategy so sugar doesn't creep back</li>
+                <li><strong>✅ Real Results:</strong> Shed excess weight without starving</li>
               </ul>
+              <p className="testimonial">
+                “I felt the difference in just 2 days — no crashes, no cravings. Best $20 I’ve spent.” – Lisa M.
+              </p>
               <a
                 href="https://sugardelete.myshopify.com/checkouts/cn/Z2NwLWV1cm9wZS13ZXN0MTowMUpaOFNLUFY0RTUzTU5aSjc4RVlQM1IzMw?preview_theme_id=180813726019"
                 className="product-button"
@@ -38,7 +44,7 @@ const ProductPage = () => {
                 rel="noopener noreferrer"
                 style={{ textDecoration: "none" }}
               >
-                👉 START MY 7-DAY RESET (Only $19.99)
+                👉 RESET MY CRAVINGS & ENERGY NOW – Just $19.99
               </a>
             </div>
           </div>
