@@ -88,14 +88,6 @@ const Quiz = () => {
     window.scrollTo({top: document.documentElement.scrollHeight * 0.1});
   }, [step]);
 
-  useEffect(() => {
-    if (typeof window !== "undefined" && window.dataLayer) {
-      window.dataLayer.push({
-        event: "quiz_progress",
-        step: step + 1,
-      });
-    }
-  }, [step]);
 
   const handleAnswer = (answer) => {
     setAnswers((prev) => ({ ...prev, [currentQuestion.id]: answer }));

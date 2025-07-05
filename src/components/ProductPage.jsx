@@ -14,6 +14,13 @@ const ProductPage = () => {
         price: 19.99
       });
     }
+    if (window.gtag) {
+      window.gtag("event", "quiz_completed", {
+        event_category: "engagement",
+        event_label: "User reached product page",
+        value: 1
+      });
+    }
   }, []);
 
   return (
